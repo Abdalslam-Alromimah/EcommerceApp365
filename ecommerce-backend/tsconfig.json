@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    "rootDir": ".", // Include the entire project root
+    "sourceMap": true
+  },
+  "include": ["src/**/*", "firebase/**/*"], // Explicitly include both src/ and firebase/ directories
+  "exclude": ["node_modules"]
+}
