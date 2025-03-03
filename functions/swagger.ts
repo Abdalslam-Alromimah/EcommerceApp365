@@ -1,7 +1,6 @@
-import { OpenApiInfo, OpenApiPaths } from 'swagger-jsdoc';
+import swaggerJsdoc from 'swagger-jsdoc';
 
-// Define the Swagger/OpenAPI specification
-const swaggerDefinition: OpenApiInfo = {
+const swaggerDefinition = {
   openapi: '3.0.3',
   info: {
     title: 'E-commerce Backend API',
@@ -157,7 +156,6 @@ const swaggerDefinition: OpenApiInfo = {
 
 const options = {
   swaggerDefinition,
-  // Ensure these paths match where your route and controller files are located
   apis: ['./src/routes/*.ts', './src/controllers/*.ts'],
 };
 

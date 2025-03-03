@@ -1,1 +1,2 @@
-"ecommerce-backend/serviceAccountKey.json" 
+node_modules/
+*.local

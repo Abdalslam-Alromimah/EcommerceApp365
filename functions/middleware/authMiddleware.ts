@@ -1,5 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
-import admin from '../../firebase/admin'; // Go up two directories to reach project root
+import * as admin from 'firebase-admin';
+
 
 export const authMiddleware = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {

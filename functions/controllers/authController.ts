@@ -1,6 +1,7 @@
 // src/controllers/authController.ts
 import { Request, Response, NextFunction } from 'express';
-import admin from '../../firebase/admin';
+import * as admin from 'firebase-admin';
+
 import { createUser, getUser } from '../models/userModel';
 
 // Define the expected request body shape
